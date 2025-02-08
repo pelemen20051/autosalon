@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="C:\Users\Kazi\.vscode\project_auto\css\style-sign.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>        
+    
+
+    <title>Страница входа и регистрации</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form id="signupForm">
+                <h1>Создать аккаунт</h1>
+                <div class="social-icons">
+                    <a href="#" class="icons"><i class='bx bxl-google'></i></a>
+                    <a href="#" class="icons"><i class='bx bxl-facebook'></i></a>
+                </div>
+                <span>Зарегистрируйтесь по электронной почте</span>
+                <input type="text" placeholder="Name" id="name">
+                <input type="email" placeholder="Enter E-mail" id="email">
+                <input type="password" placeholder="Enter Password" id="password">
+                <button type="submit">Зарегистрируйтесь</button>
+            </form>
+        </div>
+    
+        <div class="form-container sign-in">
+            <form id="signinForm">
+                <h1>Вход</h1>
+                <div class="social-icons">
+                    <a href="#" class="icons"><i class='bx bxl-google'></i></a>
+                    <a href="#" class="icons"><i class='bx bxl-facebook'></i></a>
+                </div>
+                <span>Войдите в систему с email и пароля</span>
+                <input type="email" placeholder="Enter E-mail" id="signinEmail">
+                <input type="password" placeholder="Enter Password" id="signinPassword">
+                <a href="#">Забыли пароль?</a>
+                <button type="button" id="signinButton">Вход</button>
+            </form>
+        </div>
+    
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Добро пожаловать <br>тут вы найдете автомобиль своей мечты</h1>
+                    <p>Вход в аккаунт с помощью email и пароля</p>
+                    <button class="hidden" id="login">Вход</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Добро пожаловать </h1>
+                    <p>Покорите дороги за рулём легендарных автомобилей!</p>
+                    <button class="hidden" id="register">Зарегистрируйтесь</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
